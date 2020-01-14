@@ -11,7 +11,7 @@ mongoose.set('useUnifiedTopology', true);
 app.use(express.json()); // Make sure it comes back as json
 app.use(express.urlencoded({ extended: true })); // Make sure it comes back as json
 
-// const uri = PATH_TO_MB i.e. mongodb+srv://Username:PW@some mongo connection string
+// const uri = PATH_TO_DB i.e. mongodb+srv://Username:PW@some mongo connection string
 mongoose.connect(uri);
 
 const addExampleRoute = require('./routes/exampleRouter.js');
